@@ -1,15 +1,21 @@
-console.log('=== Exercício da Escada ===');
+/*function NOME (argumento, argumento, argumento, argumento) {
+    execução
+} */
 
-let qtdeLances = Number(prompt('Quantos lances de escada você gostaria de fazer?'));
-// let material = '#';
-let material=prompt('Qual é o material que você quer utilizar na escada?');
+function SomaElevadaAoQuadrado(a = 2, b = 2) {// assinatura da função   
+    return (a + b) ** 2
+};
+console.log(SomaElevadaAoQuadrado(10, 10));
 
-let degrau= material
-let i = 0;
-
-while (i < qtdeLances) {
-    console.log(degrau);
-    degrau = degrau + material;
-
-    i++;
+function aleatorio(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) +
+    min;
 }
+
+/*
+min 0
+max 10
+
+Math.floor(0.5 *(110))
+
+ */
